@@ -1,0 +1,107 @@
+/* SE.css file*/
+
+/* This is the whole topnavigator thus arffects the whole thing. */
+.topnav{
+  overflow:hidden;
+    background-color: #7F00FF;
+}
+
+/*Styling the links of the top navigator*/
+.topnav a{
+  float:right;
+  display:block;
+  color:ff0000;
+  color-text: lightgreen;
+  text-align: center;
+  padding: 10px 40px;
+  text-decoration:none;
+}
+          /* This section is mainly for the rollover of the top navigation buttons */
+.topnav a:hover {
+  background-color: #000000;
+  color: #33FFFF;
+}
+/*end of top nevagation part of the web search engine*/
+
+
+/*beginning of search button css code*/
+
+*{
+  box-sizing:border-box;
+}
+
+
+
+/*Styling of the Search fuild*/
+form.searchbutton input[type=text]{
+  padding:10px;
+  font-size: 17px;
+  border: 2px solid white;
+  float: center;
+  width:80%;
+  background: #787878;
+}
+
+
+/*Styling of the submit button*/
+
+form.searchbutton button{
+  float:right;
+  width:20%;
+  padding:10px;
+  background: #2196F3;
+  color:#00FF00;
+  font-size: 17px;
+  border:2px solid #FFFFFF;
+  border-left: none;     /*prevent double borders*/
+  cursor:pointer;
+}
+/*This is for the searchbutton to be able to "rollover" */
+
+form.searchbutton button:hover{
+  background: #99004C;
+}
+
+/*clear flaots*/
+form.searchbutton{
+  content:"";
+  clear:both;
+  display:table;
+}
+/*end of searchbutton relatee to coding*/
+
+/*This is mainly to include the background*/
+body{
+  background-color: #9933FF;
+  background-image:url("thumb-1920-294343.jpg");
+  max-width: 100%;
+  margin: 0;
+}
+
+
+/*putting buttons and searchbutton in the middle of the page + the Logo*/
+#searchbutton{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translatex(-50%) translatey(-50%);
+}
+
+/*This part edits the color of the h2 heading*/
+h2{
+  color:#3FE6F4;
+}
+/*This section edtis the view of the buttons bellow the search button*/
+#Extra_buttons button{
+  float: center;
+  margin-top:15px;
+  padding: 10px;
+  background-color: lightblue;
+  color:white;
+}
+
+/*This section makes sure that the buttons under the search buttons hover or rollover*/
+#Extra_buttons button:hover{
+  background-color: pink;
+  color:purple;
+}
